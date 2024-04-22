@@ -7,10 +7,6 @@ import './fileDownloader.css';
 declare const manywho: any;
 
 export default class fileDownloader extends FlowComponent {
-    // holder for datarefresh timer
-    timerId = -1;
-    refreshTimerId = -1;
-    timerCounter = 0;
 
     fileNameHiddenComponentID : string
     fileTypeHiddenComponentID : string
@@ -26,7 +22,6 @@ export default class fileDownloader extends FlowComponent {
         this.fileNameHiddenComponentID = this.getAttribute('file Name Hidden Component ID', 'DEFAUTL_VALUE');
         this.fileTypeHiddenComponentID = this.getAttribute('file Type Hidden Component ID', 'DEFAUTL_VALUE');
         this.fileContentHiddenComponentID = this.getAttribute('file Content Hidden Component ID', 'DEFAUTL_VALUE');
-        
     }
 
     async componentDidMount() {
