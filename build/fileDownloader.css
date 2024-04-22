@@ -1,0 +1,124 @@
+.icon-picker-icon
+{
+    font-size: 18pt;
+    color: #000;
+}
+.fav-frame
+{
+    background-color: #009cdd;
+    width: 100%;
+    color: #cdebf9;
+    border-radius : 6px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.fav-title-bar
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #fefefe;
+}
+
+.fav-title-bar-left
+{
+    float: left;
+}
+
+.fav-title-bar-right
+{
+    float: right;
+}
+
+.fav-title
+{
+    font-family: "Tahoma";
+    font-size: 16pt;
+}
+
+.fav-body
+{
+    width: 100%;
+    border-radius : 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fav-icon-button
+{
+    cursor: pointer;
+    vertical-align: sub;
+    font-size: 13pt;
+    padding-left: 10px;
+}
+
+.fav-icon-button:hover
+{
+    color:yellow;
+}
+
+.fav-top-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.fav-top-list-item-div
+{
+    border: 1px solid #fefefe;
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+
+.fav-top-list-item-title
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.fav-top-list-item-body
+{
+    width: 100%;
+    background-color: #cdebf9;
+    padding-left: 30px;
+    color: #000000;
+}
+
+.fav-top-list-item-title-left
+{
+    float: left;
+    padding-left: 10px;
+}
+
+.fav-top-list-item-title-right
+{
+    float: right;
+    padding-right: 5px;
+}
+
+.fav-child-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.fav-child-list-item
+{
+    padding : 0px;
+}
+
+.fav-child-list-item-caption
+{
+    color: #000000 !important;
+    width: 220px;
+}
+
+.fav-child-list-item-value
+{
+    color: #000000 !important;
+}
+
