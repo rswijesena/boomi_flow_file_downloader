@@ -30,10 +30,12 @@ export default class fileDownloader extends FlowComponent {
         this.fileContent = manywho.model.getComponent(this.fileContentHiddenComponentID, this.flowKey);
     }
 
+    forceCRLF = (str) => str.replace(/\r?\n/g, "\r\n");
+
     downloadFile = (fileTypeParam) => {
         // Create a sample text file content
         let blob : any;
-        console.log("filetype =" + fileTypeParam)
+        
         if(fileTypeParam == "application/pdf" || fileTypeParam=="application/vnd.openxmlformats-officedocument.wordprocessingml.document" || fileTypeParam=="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
             // Decode the base64 string to a Uint8Array
             const pdfData = atob(this.fileContent.contentValue);
@@ -45,10 +47,9 @@ export default class fileDownloader extends FlowComponent {
             blob = new Blob([dataArray], { type: this.fileType.contentValue });
         } else {
             // Create a Blob object containing the file content
-            blob = new Blob([this.fileContent.contentValue], { type: this.fileType.contentValue });
+            blob = new Blob([this.forceCRLF(this.fileContent.contentValue)], { type: this.fileType.contentValue });
         }
        
-    
         // Create a URL for the Blob object
         const url = URL.createObjectURL(blob);
     
